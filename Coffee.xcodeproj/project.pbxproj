@@ -60,17 +60,33 @@
 		00E2B09327B8B19300C43382 /* Coffee */ = {
 			isa = PBXGroup;
 			children = (
-				00E2B09427B8B19300C43382 /* AppDelegate.swift */,
-				00E2B09627B8B19300C43382 /* SceneDelegate.swift */,
-				00E2B09827B8B19300C43382 /* ViewController.swift */,
-				00E2B0A827B8B76A00C43382 /* Coffee.swift */,
-				00E2B0AA27B8B77800C43382 /* CoffeeData.swift */,
+				00E2B0AF27B8D29D00C43382 /* View */,
+				00E2B0AE27B8D28B00C43382 /* Model */,
 				00E2B09A27B8B19300C43382 /* Main.storyboard */,
 				00E2B09D27B8B19400C43382 /* Assets.xcassets */,
 				00E2B09F27B8B19400C43382 /* LaunchScreen.storyboard */,
 				00E2B0A227B8B19400C43382 /* Info.plist */,
 			);
 			path = Coffee;
+			sourceTree = "<group>";
+		};
+		00E2B0AE27B8D28B00C43382 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00E2B0A827B8B76A00C43382 /* Coffee.swift */,
+				00E2B0AA27B8B77800C43382 /* CoffeeData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00E2B0AF27B8D29D00C43382 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00E2B09427B8B19300C43382 /* AppDelegate.swift */,
+				00E2B09627B8B19300C43382 /* SceneDelegate.swift */,
+				00E2B09827B8B19300C43382 /* ViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
