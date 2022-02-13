@@ -9,10 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
     var msgLabel: UILabel!
+    
+    var coffeeData = CoffeeData()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        Task.init {
+            await coffeeData.getData()
+            coffeeData.parseToObject()
+            msgLabel.text = "Coffee type: \(coffeeData.coffeeTypes[0].getTitle())"
+        }
     }
 
     override func loadView() {
@@ -22,7 +29,7 @@ class ViewController: UIViewController {
         msgLabel = UILabel()
         msgLabel.translatesAutoresizingMaskIntoConstraints = false
         msgLabel.textAlignment = .center
-        msgLabel.text = "Hello World!"
+        msgLabel.text = "Placeholder"
         view.addSubview(msgLabel)
         
         NSLayoutConstraint.activate([
